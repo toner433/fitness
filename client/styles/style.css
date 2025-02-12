@@ -1,19 +1,123 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #0a8a9b;
-
     margin: 0;
     padding: 0;
+    background: url('../assets/main banner.png') no-repeat center center fixed;
+    background-size: cover;
+}
+@font-face {
+    font-family: 'Lato-Light';
+    src: url('../assets/Lato-Light.ttf') format('truetype');
+    }
+    
+    @font-face {
+    font-family: 'Lato-Regular';
+    src: url('../assets/Lato-Regular.ttf') format('truetype');
+    }
+
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin: 5;
+    
+}
+.container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-h1 {
-    color: #333;
+.refs {
+    font-family: 'Lato-Light';
+    align-self: en;
+    margin-right: 100px;
+    font-size: 14pt;
+    
+}
+
+.label {
+    margin-right: 10px; 
+    margin-left: 100px;
+    align-items: center;
+}
+
+.phone {
+    display: flex;
+    align-items: flex-start; 
+    font-family: 'Lato-Regular';
+    margin-right: 5px ;
+    font-size: 16pt;
+}
+
+.button {
+    margin-left: 5px;
+    background-color: #E7490F;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+nav {
+    display: flex; 
+    margin: 10px 0;
+}
+
+nav a {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: hsla(0, 0%, 100%, 0.5);
+}
+
+.hero h1 {
+    font-size: 3em;
+    color: hsla(0, 0%, 100%, 0.5);
     text-align: center;
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+.content h2 {
+    color: hsla(0, 0%, 100%, 0.5);
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     margin-top: 20px;
 }
 
-p {
-    color: #666;
-    line-height: 1.5;
-    padding: 0 20px;
+.service {
+    background-color: hsla(0, 0%, 100%, 0.5);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+}
+
+.service:hover {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: hsla(0, 0%, 100%, 0.5);
 }
