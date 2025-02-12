@@ -21,15 +21,9 @@ header {
     color: white;
     display: flex;
     justify-content: space-between;
-<<<<<<< HEAD
     align-items: center;
     margin: 5;
-
-=======
-    align-items: center; 
-    margin: 5px;
     
->>>>>>> de09fb02161c7e06718e375dc6dc49c05fa11a34
 }
 
 .container {
@@ -160,9 +154,8 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
-<<<<<<< HEAD
     margin-top: 20px;
-=======
+
     color: hsla(0, 0%, 100%, 0.5);
 }
 
@@ -244,5 +237,4 @@ footer {
     border-radius: 334px;
     background: rgba(231, 73, 15, 0.40);
     filter: blur(115px);
->>>>>>> de09fb02161c7e06718e375dc6dc49c05fa11a34
 }
