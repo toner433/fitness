@@ -6,33 +6,53 @@
     <title>Программы тренировок</title>
     <link rel="stylesheet" href="../styles/style.css">
 </head>
-<body>
+<body class="bg-black">
 <header>
-    <h1>Наши программы</h1>
-    <p>У нас широкий и сбалансированный выбор тренировок...</p>
+    <link rel="stylesheet" href="../styles/style.css">
+    <img class="label" src="../assets/Layer 2.png" alt="значок">
+    <div class="container">
+        <div class="phone"><img class='phone label' src="../assets/Phone.png"
+                                alt="значок телефона">+375298518492</div>
+        <button class="button">Купить подписку</button><br>
+
+        <nav class="refs">
+            <a href="exercises.html">Упражнения</a>
+            <a href="#recipes">Рецепты</a>
+            <a href="#about">О нас</a>
+            <a href="#contacts">Контакты</a>
+
+        </nav>
+    </div>
 </header>
+<main class="bg-black">
+    <section class="exercise">
+        <div class="exercise-text-full">
+            <div class="ex-title">
+            <span class="subtitle">КАК БУДЕМ ТРЕНИРОВАТЬСЯ</span>
+            <h2 style="font-family: Lato-Regular">Наши упражнения</h2>
+            </div>
+            <div style="display: flex">
+            <p class="exercise-text">
+                У нас широкий и сбалансированный выбор тренировок.
+                Разнообразие нагрузок поможет комплексно развить тело
+                и решить любые задачи.
+                В основе всех тренировок — движение в трех плоскостях
+                для наиболее эффективной и безопасной активации тела!
+                Тренируйтесь в мини-группе или приходите на индивидуальные занятия.
+            </p>
+                <div class="gradient" style="margin-left: 500px"></div>
+            </div>
+        </div>
+        <div class="programs-image">
+            <img src="../assets/Group 2.png" alt="Фитнес-тренировка">
+        </div>
+    </section>
 
-<section class="programs">
-    <div class="card">
-        <img src="hit.jpg" alt="HIIT-тренинг">
-        <h2>HIIT-тренинг</h2>
-        <p>Тренировка на мышцы ног и ягодиц...</p>
-        <button>Записаться</button>
-    </div>
 
-    <div class="card">
-        <img src="pilates.jpg" alt="Пилатес">
-        <h2>Пилатес</h2>
-        <p>Тренировка с резинкой и отягощением...</p>
-        <button>Записаться</button>
-    </div>
+</main>
 
-    <div class="card">
-        <img src="zumba.jpg" alt="Зумба">
-        <h2>Зумба</h2>
-        <p>Энергичная танцевальная тренировка...</p>
-        <button>Записаться</button>
-    </div>
-</section>
+
+
+
 </body>
 </html>
