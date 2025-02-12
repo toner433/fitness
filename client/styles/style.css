@@ -154,10 +154,12 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
-    margin-top: 20px;
+    margin: 0;
 
     color: hsla(0, 0%, 100%, 0.5);
 }
+
+
 
 .bg-black {
     background: #000000;
@@ -237,4 +239,10 @@ footer {
     border-radius: 334px;
     background: rgba(231, 73, 15, 0.40);
     filter: blur(115px);
+}
+
+.disc-fon{
+    
+    background-color: #FFF;
+    background-size: cover;
 }
