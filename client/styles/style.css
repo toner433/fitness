@@ -28,11 +28,12 @@ header {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    height: 50px;
 }
 
 .refs {
     font-family: 'Lato-Light';
-    align-self: en;
+    
     margin-right: 100px;
     font-size: 14pt;
     
@@ -42,11 +43,13 @@ header {
     margin-right: 10px; 
     margin-left: 100px;
     align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .phone {
     display: flex;
-    align-items: flex-start; 
+    align-items: center; 
     font-family: 'Lato-Regular';
     margin-right: 5px ;
     font-size: 16pt;
@@ -58,6 +61,7 @@ header {
     color: white;
     padding: 10px 20px;
     text-decoration: none;
+    margin-right: 100px;
 }
 
 nav {
