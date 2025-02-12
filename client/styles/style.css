@@ -239,6 +239,80 @@ footer {
     border-radius: 334px;
     background: rgba(231, 73, 15, 0.40);
     filter: blur(115px);
+    z-index: 0;
+}
+
+.cards {
+    display: flex;
+    width: 80%;
+    height: 80%;
+    flex-shrink: 0;
+    align-items: center;
+}
+
+.card {
+    display: inline-flex;
+    padding: 30px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #070707;
+}
+
+.card-inside {
+    display: block;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card-content {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.card-content-text {
+    display: block;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card-text-title {
+    display: block;
+    color: #FFF;
+    font-family: Lato-Regular;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    justify-content: center;
+}
+
+.card-text {
+    display: block;
+    color: #7F7F7F;
+    font-family: Lato-Light;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.card-button {
+    display: block;
+    padding: 9px 33px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    border: 1px solid #E7490F;
+}
+
+.card-inside img {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
 }
 
 .disc-fon{
