@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -22,7 +23,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 5;
+    
+    
     
 }
 
@@ -30,21 +32,27 @@ header {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    height: 50px;
+    width: 80%;
+    
 }
 
 .refs {
     font-family: 'Lato-Light';
-    margin-right: 100px;
-    font-size: 14pt;
+    font-size: 1.2rem;
+    margin-left: 5vw;
+    border: solid #E7490F;
+    padding: 1% 1%;
+    margin-left: 10%;
 }
 
 .label {
-    margin-right: 10px;
-    margin-left: 100px;
+    margin-right: 10vw;
+    margin-left: 10vw;
     align-items: center;
     margin-bottom: 10px;
     margin-top: 10px;
+    width: 40%;
+    height: 80%;
 }
 
 .phone {
@@ -52,7 +60,7 @@ header {
     align-items: center;
     font-family: 'Lato-Regular';
     margin-right: 5px;
-    font-size: 16pt;
+    font-size: 1.4rem;
 }
 
 .phone:hover{
@@ -60,15 +68,18 @@ header {
     color: hsla(0, 0%, 100%, 0.5);
     cursor: pointer;
 }
+.phone label{
+    margin: 0;
+}
 
 .button {
     margin-left: 10px;
     background-color: #E7490F;
     color: white;
-    padding: 10px 20px;
+    padding: 10px 10px;
     text-decoration: none;
-    margin-right: 100px;
     border: 2px solid black;
+    font-size: 1rem;
 }
 .button:hover{
     cursor: pointer;
@@ -102,7 +113,7 @@ a:hover {
     background-color: rgba(231, 73, 15, 0.8);
     color: white;
     padding: 20px;
-    font-size: 48px;
+    font-size: 3vw;
     font-weight: bold;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
     margin-bottom: 20px;
@@ -121,17 +132,18 @@ a:hover {
     width: 300px;
     height: auto;
     overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .service h3 {
     font-family: "Lato-Regular";
+    font-size: 1rem;
 }
 
 .service p {
     font-family: "Lato-Light";
+    font-size: 1rem;
 }
 
 .service:hover {
@@ -155,12 +167,79 @@ footer {
     bottom: 0;
     width: 100%;
     margin: 0;
+    font-size: 1rem;
 
     color: hsla(0, 0%, 100%, 0.5);
 }
+.burger {
+    cursor: pointer;
+    padding: 5px;
+    display: none; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.burger div {
+    width: 5vw;
+    height: 4px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+input[type="checkbox"] {
+    display: none; 
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border-bottom: 1px solid #444;
+}
 
 
+input[type="checkbox"]:checked ~ .menu {
+    display: flex;
+}
 
+
+@media (max-width: 750px) {
+    .burger {
+        display: flex; 
+    }
+
+    .refs {
+        display: none; 
+    }
+    .phone{
+        font-size: 2vw;
+
+    }
+    .button{
+        font-size: 2vw;
+    }
+    .label{
+        margin-right: 0;
+        margin-left: 10%;
+    }
+    .phone.label{
+        margin: 0;
+        right: 0;
+    }
+    
+}
 .bg-black {
     background: #000000;
     width: 100vw;
