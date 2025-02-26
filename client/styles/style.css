@@ -27,7 +27,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
     
     
 }
@@ -181,6 +181,8 @@ footer {
     display: none; 
     flex-direction: column;
     align-items: center;
+    z-index: 1000;
+
 }
 
 .burger div {
@@ -204,6 +206,7 @@ input[type="checkbox"] {
     right: 0;
     width: 200px;
     border-radius: 5px;
+    z-index: 1000;
 }
 
 .menu a {
@@ -242,7 +245,14 @@ input[type="checkbox"]:checked ~ .menu {
         margin: 0;
         right: 0;
     }
-    
+
+    .gradient {
+        width: 120%; /* Уменьшите ширину градиента */
+        height: 120%; /* Уменьшите высоту градиента */
+        top: -5%; /* Сдвиньте градиент вверх */
+        left: -5%; /* Сдвиньте градиент влево */
+        filter: blur(300px);
+    }
 }
 .bg-black {
     background: #000000;
@@ -308,23 +318,26 @@ input[type="checkbox"]:checked ~ .menu {
 .programs-image {
     width: 50%;
     position: relative;
-    z-index: 2;
+
 }
 
 .programs-image img {
     width: 50%;
     border-radius: 10px;
-    z-index: 2;
+    z-index: 1;
+    position: relative;
 }
 
 .gradient {
-    width: 25vw;
-    height: 20vw;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
-    background: rgb(255, 67, 0);
-    filter: blur(115px);
+    background: rgba(255, 70, 0, 0.82);
+    filter: blur(150px);
     position: absolute;
-    z-index: 1;
+    z-index: 0;
+    top: -10%;
+    left: -10%;
 }
 
 .cards {
