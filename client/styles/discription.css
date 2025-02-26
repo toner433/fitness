@@ -1,0 +1,279 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('../assets/.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+@font-face {
+    font-family: 'Lato-Light';
+    src: url('../assets/Lato-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lato-Regular';
+    src: url('../assets/Lato-Regular.ttf') format('truetype');
+}
+
+header {
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+
+}
+
+.refs {
+    font-family: 'Lato-Light';
+    font-size: 1.2rem;
+    margin-left: 5vw;
+    border: solid #E7490F;
+    padding: 1% 1%;
+    margin-left: 10%;
+}
+
+.label {
+    margin-right: 10vw;
+    margin-left: 10vw;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 40%;
+    height: 80%;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    font-family: 'Lato-Regular';
+    margin-right: 5px;
+    font-size: 1.4rem;
+}
+
+.phone:hover {
+    text-decoration: underline;
+    color: hsla(0, 0%, 100%, 0.5);
+    cursor: pointer;
+}
+
+.phone label {
+    margin: 0;
+}
+
+.button {
+    margin-left: 10px;
+    background-color: #E7490F;
+    color: white;
+    padding: 10px 10px;
+    text-decoration: none;
+    border: 2px solid black;
+    font-size: 1rem;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: #992900;
+    text-decoration: underline;
+
+}
+
+nav {
+    display: flex;
+    margin: 10px 0;
+}
+
+nav a {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: hsla(0, 0%, 100%, 0.5);
+}
+
+footer {
+    background: black;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    font-size: 1rem;
+
+    color: white;
+}
+
+.burger {
+    cursor: pointer;
+    padding: 5px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.burger div {
+    width: 5vw;
+    height: 4px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border-bottom: 1px solid #444;
+}
+
+
+input[type="checkbox"]:checked~.menu {
+    display: flex;
+}
+
+
+@media (max-width: 750px) {
+    .burger {
+        display: flex;
+    }
+
+    .refs {
+        display: none;
+    }
+
+    .phone {
+
+        font-size: 2.5vw;
+
+    }
+
+    .button {
+        font-size: 2.5vw;
+    }
+
+    .label {
+        margin-right: 0;
+        margin-left: 10%;
+    }
+
+    .phone.label {
+        margin: 0;
+        right: 0;
+    }
+
+}
+
+.discription {
+    font-style: "Lato-Regular";
+
+
+    margin-left: 5vw;
+    margin-top: 5vh;
+}
+
+.discription h2 {
+    font-size: 1.8rem;
+}
+
+.discription p {
+    font-style: "Lato-Light";
+    font-size: 1.4rem;
+    max-width: 50%;
+
+}
+
+h1 {
+    font-size: 1.3rem;
+    font-style: "Lato-Regular";
+    color: #E7490F;
+}
+
+.discription-info {}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+.project-image {
+    max-width: 600px;
+    min-width: 300px;
+    
+    height: auto ;
+    margin-right: 20px;
+    margin-left: 30px;
+    align-items: center;
+    margin-top: 10vw;
+    border:solid #E7490F;
+    margin-bottom: 3vh;
+}
+h2{
+    margin-right: 40%;
+}
+
+
+
+@media (max-width: 1527px) {
+    .project-image {
+        margin-top: 0;
+        max-width: 50%;
+        margin-right: 10vw;
+        align-items: start;
+        margin-left: 0;
+    }
+
+    .discription p {
+        font-size: 120%;
+        max-width: 90%;
+
+    }
+
+    .discription h1 {
+        font-size: 120%;
+    }
+
+    .discription h2 {
+        font-size: 155%;
+    }
+    .info {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
+    }
+
+
+}
