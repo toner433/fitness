@@ -167,8 +167,6 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    position: relative;
-    bottom: 0;
     width: 100%;
     margin: 0;
     font-size: 1rem;
@@ -222,38 +220,6 @@ input[type="checkbox"]:checked ~ .menu {
 }
 
 
-@media (max-width: 750px) {
-    .burger {
-        display: flex; 
-    }
-
-    .refs {
-        display: none; 
-    }
-    .phone{
-        font-size: 2vw;
-
-    }
-    .button{
-        font-size: 2vw;
-    }
-    .label{
-        margin-right: 0;
-        margin-left: 10%;
-    }
-    .phone.label{
-        margin: 0;
-        right: 0;
-    }
-
-    .gradient {
-        width: 120%; /* Уменьшите ширину градиента */
-        height: 120%; /* Уменьшите высоту градиента */
-        top: -5%; /* Сдвиньте градиент вверх */
-        left: -5%; /* Сдвиньте градиент влево */
-        filter: blur(300px);
-    }
-}
 .bg-black {
     background: #000000;
 }
@@ -289,16 +255,16 @@ input[type="checkbox"]:checked ~ .menu {
 .exercise-text{
     color: #FFF;
     font-family: Lato-Light;
-    font-size: 1vw;
+    font-size: 1.8vw;
     font-style: normal;
-    width: 70%;
-    height: 50vh;
+    width: 100%;
+    height: auto;
 }
 
 .subtitle {
     color: #E7490F;
     font-family: Lato-Regular;
-    font-size: 2vw;
+    font-size: 2.3vw;
     font-style: normal;
     line-height: normal;
     letter-spacing: 1.4px;
@@ -312,13 +278,15 @@ input[type="checkbox"]:checked ~ .menu {
     align-items: flex-start;
     gap: 1vw;
     width: 50%;
-    font-size: 2vw;
+    font-size: 2.3vw;
 }
 
 .programs-image {
     width: 50%;
     position: relative;
-
+    display: flex; /* Включаем Flexbox */
+    justify-content: center; /* Центрируем по горизонтали */
+    align-items: center; /* Центрируем по вертикали */
 }
 
 .programs-image img {
@@ -344,7 +312,7 @@ input[type="checkbox"]:checked ~ .menu {
     display: flex;
     flex-wrap: wrap;
     width: 80vw;
-    height: 60vw;
+    height: auto;
     align-items: center;
     justify-content: center;
     padding: 0 10vw ;
@@ -356,8 +324,8 @@ input[type="checkbox"]:checked ~ .menu {
     padding: 0.7vw 0.7vw;
     justify-content: center;
     align-items: center;
-    width: 15vw;
-    height: 40%;
+    width: 23.5vw;
+    height: auto;
     gap: 1rem;
     background: #070707;
     margin: 0.8vw;
@@ -417,6 +385,8 @@ input[type="checkbox"]:checked ~ .menu {
     width: 100%;
     border: 0.07vw solid #E7490F;
     font-size: 1vw;
+    color:#E7490F;
+    background-color: #000000;
 }
 
 
@@ -425,3 +395,119 @@ input[type="checkbox"]:checked ~ .menu {
     background-color: #FFF;
     background-size: cover;
 }
+
+@media (max-width: 750px) {
+    .exercise {
+        flex-direction: column; /* Измените направление на вертикаль */
+        padding: 2vw; /* Уменьшите отступы */
+        width: 96vw; /* Увеличьте ширину */
+        height: auto; /* Автоматическая высота */
+    }
+
+    .exercise-text-full {
+        width: 100%; /* Занимает всю ширину */
+        height: auto; /* Автоматическая высота */
+    }
+
+    .exercise-text {
+        font-size: 3vw; /* Увеличьте размер шрифта */
+        height: auto; /* Автоматическая высота */
+    }
+
+    .subtitle {
+        font-size: 4vw; /* Увеличьте размер шрифта */
+    }
+
+    .ex-title {
+        width: 100%; /* Занимает всю ширину */
+        font-size: 4vw; /* Увеличьте размер шрифта */
+    }
+
+    .programs-image {
+        width: 70%; /* Занимает всю ширину */
+    }
+
+    .programs-image img {
+        width: 100%; /* Занимает всю ширину */
+    }
+
+    .gradient {
+        width: 100%; /* Занимает всю ширину */
+        height: 100%; /* Занимает всю высоту */
+        top: 0; /* Позиционировать сверху */
+        left: 0; /* Позиционировать слева */
+    }
+
+    .cards {
+        width: 100vw; /* Увеличьте ширину */
+        height: auto; /* Автоматическая высота */
+        flex-wrap: wrap;
+        padding: 0;/* Обязательно для корректного отображения */
+    }
+
+    .card {
+        width: 46vw; /* Уменьшите ширину */
+        height: auto; /* Уменьшите высоту */
+        margin: 1vw; /* Уменьшите отступы */
+        filter: none; /* Удалите любое размытие */
+    }
+
+    .card-inside img {
+        height: 50%; /* Уменьшите высоту */
+    }
+
+    .card-content {
+        height: 70%; /* Увеличьте высоту */
+    }
+
+    .card-text-title {
+        font-size: 4vw; /* Увеличьте размер шрифта */
+    }
+
+    .card-text {
+        font-size: 3vw;
+        /* Увеличьте размер шрифта */
+    }
+
+    .card-button {
+        font-size: 3vw; /* Увеличьте размер шрифта */
+    }
+    .burger {
+        display: flex;
+    }
+
+    .refs {
+        display: none;
+    }
+    .phone{
+        font-size: 2vw;
+
+    }
+    .button{
+        font-size: 2vw;
+    }
+    .label{
+        margin-right: 0;
+        margin-left: 10%;
+    }
+    .phone.label{
+        margin: 0;
+        right: 0;
+    }
+
+    .gradient {
+        width: 120%; /* Уменьшите ширину градиента */
+        height: 120%; /* Уменьшите высоту градиента */
+        top: -5%; /* Сдвиньте градиент вверх */
+        left: -5%; /* Сдвиньте градиент влево */
+        filter: blur(300px);
+    }
+}
+
+@media (min-width: 751px){
+    .card-text{
+        font-size: 1.6vw;
+    }
+
+}
+
