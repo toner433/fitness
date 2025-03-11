@@ -13,12 +13,12 @@ body {
 
 @font-face {
     font-family: 'Lato-Light';
-    src: url('assets/Lato-Light.ttf') format('truetype');
+    src: url('../assets/Lato-Light.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Lato-Regular';
-    src: url('assets/Lato-Regular.ttf') format('truetype');
+    src: url('../assets/Lato-Regular.ttf') format('truetype');
 }
 
 header {
