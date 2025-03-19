@@ -6,6 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Фитнес Клуб</title>
     <link rel="stylesheet" href="styles/style.css">
+    <style>
+        /* Пример стилей для сервиса */
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .service {
+            width: 30%;
+            margin: 1%;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        /* Общие стили */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 
 <body>
@@ -37,10 +59,9 @@
         </div>
     </header>
 
-
-    <div class="content">
+    <div class="content" id="content">
         <h2>Полезные советы для поддержания здорового образа жизни</h2>
-        <div class="services">
+        <div class="services" id="services">
             <div class="service">
                 <img src="assets/image 14.png" alt="Регулярная физическая активность">
                 <h3>Регулярная физическая активность</h3>
@@ -89,6 +110,50 @@
     <footer>
        <p><a href="https://github.com/toner433/fitness">https://github.com/toner433/fitness</a></p>
     </footer>
+
+    <script>
+        
+        const servicesContainer = document.getElementById('services');
+        const existingServices = Array.from(servicesContainer.children); 
+    
+        function loadMoreContent() {   
+            for (let i = 0; i < 7; i++) {
+                const serviceClone = existingServices[i % existingServices.length].cloneNode(true); 
+                servicesContainer.appendChild(serviceClone); 
+             
+            }
+        }
+    
+        window.addEventListener('scroll', () => {
+            if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+                loadMoreContent(); 
+            }
+        });
+    
+        loadMoreContent();
+    </script>
+    <button id="backToTop" style="display: none;">Вернуться вверх</button>
+
+    <script>
+        const backToTopButton = document.getElementById('backToTop');
+
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) { 
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
 </body>
 
 </html>

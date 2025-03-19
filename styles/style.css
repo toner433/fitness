@@ -134,7 +134,8 @@ a:hover {
     background-color: rgba(255, 255, 255, 0.8);
     margin: 10px;
     padding: 20px;
-    width: 300px;
+    width: 400px;
+    min-width: 150px;
     height: auto;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;  
@@ -404,10 +405,10 @@ input[type="checkbox"]:checked ~ .menu {
 
 @media (max-width: 750px) {
     .exercise {
-        flex-direction: column; /* Измените направление на вертикаль */
-        padding: 2vw; /* Уменьшите отступы */
-        width: 96vw; /* Увеличьте ширину */
-        height: auto; /* Автоматическая высота */
+        flex-direction: column; 
+        padding: 2vw; 
+        width: 96vw; 
+        height: auto; 
     }
 
     .exercise-text-full {
@@ -516,4 +517,23 @@ input[type="checkbox"]:checked ~ .menu {
     }
 
 }
+
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none; 
+    background-color: rgba(231, 73, 15, 0.8);
+}
+
+#backToTop:hover {
+    background-color: #f7903c; 
+}
+
 
